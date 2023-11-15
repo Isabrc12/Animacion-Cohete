@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.fondo{
+ animation: fondo-move 10s infinite linear;           
+}
+
+
+.ch2{
+ animation: ch-move 10s infinite linear;
+}   
+
+
+.fg{
+ animation: fuego2 10s linear infinite,
+            fuego .4s steps(3) infinite;
+}               
+
+
+.ocultar{
+    display: none;
+}
+
+
+.contenedor {
+    background-image: url(/IMG/fondo\ estrellas.jpeg);
+    overflow: hidden;
+    height: 93rem;
+    background-size: cover;
+}
+
+
+@keyframes fondo-move {
+    100%{ 
+        background-position-y: 20rem;
+    }
+}
+
+
+.ch{
+    height: 44rem;  
+    margin-top: 40rem;
+    margin-left: 47rem;
+}
+
+
+@keyframes ch-move{
+    100%{
+        transform: translateY(-78rem);
+    }
+}
+
+
+.fuego{
+    position: absolute;
+    background: url(./IMG/Fuego.png);
+    top: 1200px;
+    height: 265px;
+    left: 57rem;
+    width: 238px; 
+}
+
+
+@keyframes fuego{
+    100%{
+        background-position-y: 263px; 
+    }
+}
+
+
+@keyframes fuego2{
+    100%{
+        transform: translateY(-78rem);
+    }
+}
